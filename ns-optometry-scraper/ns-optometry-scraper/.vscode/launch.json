@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run scraper (OSM only)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/scraper.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run scraper (OSM + Google)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/scraper.py",
+      "args": ["--google"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
